@@ -6,7 +6,7 @@ export default {
 <template lang="">
     <div>
         <header>
-            ciao
+            Ciao!
         </header>
     </div>
 </template>
