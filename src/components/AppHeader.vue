@@ -81,4 +81,7 @@ export default {
         text-align: center;
         margin-top: 25px;
     }
+    ul{
+        list-style-type: none;
+    }
 </style>
