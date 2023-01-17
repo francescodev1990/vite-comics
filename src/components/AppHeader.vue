@@ -4,11 +4,11 @@ export default {
 }
 </script>
 <template lang="">
-    <div>
-        <header>
-            Ciao!
-        </header>
-    </div>
+    <header>
+        <a href="/" class="brand">
+            <img src="../assets/images/dc-logo.png">
+        </a>
+    </header>
 </template>
 
 <style lang="">
