@@ -80,8 +80,16 @@ export default {
     header{
         text-align: center;
         margin-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        
     }
     ul{
         list-style-type: none;
+        display: flex;
+        margin: 35px;
+    }
+    ul li{
+        padding: 7px;
     }
 </style>
