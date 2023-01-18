@@ -4,11 +4,11 @@ export default {
 }
 </script>
 <template lang="">
-    <div>
+    <div class="footer_content">
         
     </div>
 </template>
 
-<style lang="">
+<style lang="scss">
     
 </style>

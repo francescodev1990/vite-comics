@@ -1,6 +1,31 @@
 <script>
 export default {
-    
+    data() {
+        return {
+            menu_2:[
+                {
+                    option:'DIGITAL COMICS',
+                    icon: '/src/assets/images/buy-comics-digital-comics.png'
+                },
+                {
+                    option:'DC MERCHANDISE',
+                    icon: '/src/assets/images/buy-comics-merchandise.png'
+                },
+                {
+                    option:'SUBCRIPTION',
+                    icon: '/src/assets/images/buy-comics-subscriptions.png'
+                },
+                {
+                    option:'COMIC SHOP LOCATOR',
+                    icon: '/src/assets/images/buy-comics-shop-locator.png'
+                },
+                {
+                    option:'DC POWER VISA',
+                    icon: '/src/assets/images/buy-dc-power-visa.svg'
+                },
+            ]
+        }
+    },
 }
 </script>
 <template lang="">
@@ -10,20 +35,11 @@ export default {
     <div class="nav_icon">
         <nav>
             <ul>
-                <li>
-                    <a href="#">DIGITAL COMICS</a> 
-                </li>
-                <li>
-                    <a href="#">DC MERCHANDISE</a> 
-                </li>
-                <li>
-                   <a href="#">SUBSCRIPTION</a> 
-                </li>
-                <li>
-                    <a href="#">COMIC SHOP LOCATOR</a> 
-                </li>
-                <li>
-                    <a href="#">DC POWER VISA</a> 
+                <li v-for="(item, index) in menu_2" ::key="index">
+                    <a href="#">
+                        <img :src="item.icon" :alt="option">
+                        {{item.option}}
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -42,14 +58,13 @@ export default {
         padding: 50px;
     }
     .nav_icon{
-        display: flex;
-        justify-content: center;
         padding: 25px;
         width: 100%;
-        height: 150px;
+        height: 260px;
         background-color: #0282f9;
     }
-    ul li a{
+    
+    ul li {
         padding: 15px;
         color: white;
     }
